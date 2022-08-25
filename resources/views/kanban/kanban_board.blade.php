@@ -52,6 +52,19 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
 </style>
 </head>
 <body>
@@ -68,17 +81,38 @@ input[type=text], select {
 
 <table id="customers">
   <tr>
-    <th>No.</th>
     <th>To do</th>
     <th>In progress</th>
     <th>Done</th>
   </tr>
   @foreach($lists as $lis)
   <tr>
-    <td>{{$lis->id}}.</td>
-    <td>{{$lis->title}}<br><a href="{{ url('/kanban/board/edit/') }}/{{ $lis->id }}" class="button" >change</a></td>
-    <td>{{$lis->title}}</td>
-    <td>{{$lis->title}}</td>
+    <td>
+      <a href="{{ url('/kanban/board/edit/') }}/{{ $lis->id }}" >
+      <div class="card">
+
+        <div class="container">
+          <h4><b>Task {{$lis->id}}.</b></h4>
+          <p>{{$lis->title}}</p>
+        </div>
+      </div>
+    </a>
+      
+    </td>
+    <td><div class="card">
+
+      <div class="container">
+        <h4><b>Task {{$lis->id}}.</b></h4>
+        <p>{{$lis->title}}</p>
+      </div>
+    </div></td>
+    <td><div class="card">
+
+      <div class="container">
+        <h4><b>Task {{$lis->id}}.</b></h4>
+        <p>{{$lis->title}}</p>
+      </div>
+    </div></td>
   </tr>
   @endforeach
 
