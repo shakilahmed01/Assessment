@@ -9,7 +9,7 @@ class DashboardController extends Controller
     //
     public function view(){
       $lists=Task::all();
-      return view('kanban.kanban_board',compact('lists'));
+      return view('kanban.kanban_board1',compact('lists'));
     }
 
     public function post_task(Request $request){

@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/post',[App\Http\Controllers\Api\ApiController::class, 'post_task'])->name('post_kanban');
+Route::post('/update',[App\Http\Controllers\Api\ApiController::class, 'update_task'])->name('update_task');
