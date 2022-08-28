@@ -98,7 +98,6 @@ table td{
     color:white;
     text-decoration: none;
 }
-}
 .tid{
   color: green;
 }
@@ -107,6 +106,16 @@ table td{
 }
 .ttid{
   color: Red;
+}
+
+.paginate{
+  margin: auto;
+  text-align: center;
+}
+
+.btn{
+  padding: 2px 16px;
+  background-color: orange;
 }
 
 </style>

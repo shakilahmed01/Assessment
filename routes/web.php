@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Task;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $lists=Task::latest()->simplePaginate(5);
+    return view('kanban.kanban_board1',compact('lists'));
 });
 
 Route::get('kanban/board',[App\Http\Controllers\DashboardController::class, 'view'])->name('kanban');

@@ -13,7 +13,10 @@ class ApiController extends Controller
         'title'=>$request->title
       ]);
       $string="Post Successfull!";
-      return array_merge([$request->title,$string]) ;
+      if ($kanban){
+        $i=Task::all();
+      }
+      return array_merge([$i,$string]) ;
     }
 
     public function update_task(Request $request){

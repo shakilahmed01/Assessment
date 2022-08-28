@@ -47,7 +47,7 @@
     @foreach($lists as $lis)
     <tr>
         <td >
-
+<a href="{{ url('/kanban/board/edit/') }}/{{ $lis->id }}" >
                 <div class="card">
                     <div class="container">
                     <h4 class="ptid"><b>Task {{$lis->id}}.  </b></h4>
@@ -55,7 +55,7 @@
                     <p class="ptid">{{$lis->title}} </p>
                     </div>
                 </div>
-
+</a>
         </td>
     </tr>
     @endforeach
@@ -68,7 +68,7 @@
     @foreach($lists as $lis)
     <tr>
         <td >
-
+<a href="{{ url('/kanban/board/edit/') }}/{{ $lis->id }}" >
                 <div class="card">
                     <div class="container">
                     <h4 class="tid"><b>Task {{$lis->id}}.  </b></h4>
@@ -76,12 +76,16 @@
                     <p class="tid">{{$lis->title}} </p>
                     </div>
                 </div>
-
+</a>
         </td>
     </tr>
     @endforeach
     </table>
 </div>
-
+<br>
+<div class="paginate">
+<button class="btn">{{ $lists->links() }}</button>
+</div>
+<br>
 </body>
 </html>
