@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     //
     public function view(){
-      $lists=Task::all();
+      $lists=Task::latest()->simplePaginate(5);
       return view('kanban.kanban_board1',compact('lists'));
     }
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>Kanban board</title>
 @include('kanban.css.css1')
 </head>
 <body>
