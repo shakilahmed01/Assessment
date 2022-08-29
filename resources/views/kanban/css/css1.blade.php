@@ -63,7 +63,7 @@ input[type=text], select {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .container {
@@ -116,6 +116,9 @@ table td{
 .btn{
   padding: 2px 16px;
   background-color: orange;
+}
+.a{
+  text-decoration: none;
 }
 
 </style>
