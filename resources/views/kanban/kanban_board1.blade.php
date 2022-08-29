@@ -6,7 +6,15 @@
 @include('kanban.css.css1')
 </head>
 <body>
-
+  @if ($errors->any())
+      <div class="center">
+          <ul>
+              @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+              @endforeach
+          </ul>
+      </div>
+  @endif
 
   <form action="{{route('post_kanban')}}" method="post">
     @csrf

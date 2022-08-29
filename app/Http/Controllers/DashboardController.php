@@ -13,6 +13,14 @@ class DashboardController extends Controller
     }
 
     public function post_task(Request $request){
+      $validated = $request->validate([
+        'title' => 'required',
+    ]);
+    if ($validator->fails()) {
+            return redirect('kanban/board')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
       $kanban=Task::create([
         'title'=>$request->title
       ]);
