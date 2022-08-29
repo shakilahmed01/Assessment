@@ -6,9 +6,10 @@
     <style>
     .center {
       margin: auto;
-      width: 60%;
-      border: 3px solid #73AD21;
+      width: 20%;
+      /* border: 3px solid #73AD21; */
       padding: 10px;
+      display:flex;
     }
     .button {
       background-color: #4CAF50;
@@ -23,13 +24,12 @@
       cursor: pointer;
     }
     input[type=text], select {
-      width: 50%;
+      width: 100%;
       padding: 12px 20px;
-      margin: 8px 0;
+      margin: auto;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
-      box-sizing: border-box;
     }
     </style>
   </head>

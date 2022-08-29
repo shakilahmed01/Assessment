@@ -26,19 +26,19 @@
 }
 .center {
   margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
+  width: 30%;
+  /* border: 3px solid #73AD21; */
   padding: 10px;
   display:flex;
 }
 .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 0px 12px;
+  background-color: #ffff;
+  border: 1px solid #ccc;
+  color: #ff6347;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   font-size: 16px;
   margin: 10px 20px;
   cursor: pointer;
@@ -46,10 +46,10 @@
 input[type=text], select {
   width: 50%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: auto;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   box-sizing: border-box;
 }
 .card {
@@ -95,7 +95,7 @@ table td{
     border-bottom: 1px solid #000;
     margin:0;
     font-size: larger;
-    color:white;
+    color:darkslategrey;
     text-decoration: none;
 }
 .tid{
