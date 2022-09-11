@@ -4,9 +4,10 @@
 <li>create database from .env file</li>
 <li>php artisan migrate</li>
 <li>enjoy...</li>
+<h1>Feature Photo</h1>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://kanbanzone.com/wp-content/uploads/2022/06/Kanban-Zone-Board-Example--800x569.png" width="400"></a></p>
 
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://talentvis.com/files/images/blog/2022/05/what-you-need-to-know-about-kanban-board.jpg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
